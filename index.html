@@ -1,1 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam css</title>
+<!--for logo-->
+<link rel="icon" href="img/aca.png">
+<link rel="shortcut" href="img/aca.png">
+<link rel="apple-touch-icon" href="img/aca.png">
+<!--for font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mada&display=swap" rel="stylesheet">
+    <style>
+        #content{
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            margin: 0px;
+            padding: 0px;
+            height: 100px;
+            width: 15% ;
+            background-color: #000;
+            float: left;
+            border-bottom: #000 2px solid;
+        }
+        header:hover{
+            background-color: rgb(255, 255, 255);
+        }
+        .total{
+            display: inline;
+        }
+        .aca{
+            height: 80px;
+            width: 80px;
+            line-height: 100px;
+            margin-top: 10px;
+        }
+        .bac{
+            font-size: 39px;
+        font-family:'Aclonica', sans-serif;
+        float: right;
+        position: relative;
+        top: 15%;
+        right: 20%;
+    color: #1A32B8;
+        
+    }
+        nav{
+            margin: 0px;
+            padding: 0px;
+            height: 100px;
+            width: 85% ;
+            background-image: linear-gradient(120deg,#1A32B8 79% ,rgba(230, 230, 230, 0.625) 21%) !important;
+            float: right;
+            border-bottom: #000 2px solid;
+        }
+        nav ul {
+            margin: 0px;
+            padding: 0px;
+            height: 100px;
+            list-style-type: none;
+
+        }
+        nav li{
+            float: left;
+        }
+        nav li a{
+display: inline-block;
+text-align: center;
+line-height: 100px;
+list-style-type: none;
+text-decoration: none;
+font-size: 30px;
+padding-left: 20px;
+padding-right: 20px;
+color: rgb(0, 0, 0);
+        }
+        nav li a:hover{
+            background-color: rgb(255, 255, 255);
+            color: #1A32B8;
+        }
+        #aissa{ 
+            position: absolute;
+            z-index: 1;
+            display: none;
+            text-align: left;
+            height: 50px;
+            padding-right: 20px;
+        }
+        #aissa a{
+              color: #000;
+  background-color: rgb(233, 237, 240);
+  font-size: 15px;
+  display: block;
+  line-height: 50px;
+        }
+        #aissa a:hover{
+            background-color: rgb(255, 255, 255);
+        }
+        #aissaoui:hover #aissa{
+            display: block;
+        }
+        aside{
+            margin-top: 5px;
+            float: left;
+            height: 404px;
+            width: 30%;
+            background-image: linear-gradient(  120deg,rgba(230, 230, 230, 0.625) 55% ,#1A32B8 45% ) !important;
+            text-align: center;
+        }
+        aside a{
+            font-family: 'Mada', sans-serif;
+            margin-top: 10px;
+            list-style-type: none;
+            text-decoration: none;
+            font-size: 30px;
+            color: rgb(251, 251, 251);
+            border: rgb(0, 0, 0) 1px solid;
+            border-radius: 20px;
+            padding: 10px;
+            position: relative;
+            bottom: -10px;
+            background-color: rgb(68, 68, 68);
+        }
+        aside a:hover{
+            background-color: rgb(250, 234, 6);
+            color: #000;
+        }
+       
+        main{
+            margin-top: 5px;
+            margin-left: 3px;
+            float: right;
+            height: 610px;
+            width: 69.7%;
+            background-image: linear-gradient(120deg,#1A32B8 55% ,rgba(230, 230, 230, 0.625) 45%) !important;
+        }
+        main article{
+    height: 250px;
+    width: 31%;
+    margin: 0.5%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    position: relative;
+    display: block;
+    float: right;
+    text-align: justify;margin-top: 30px;
+}
+        .spik{
+  position: relative;
+  margin: 0px;
+}
+.yas{
+  height: 250px;
+  width: 100%;
+  border-radius: 19px;
+  position: absolute;
+  margin: auto;
+}
+.hcls{
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  border-radius: 19px;
+  margin: 0%;
+  background-color: rgba(0, 0, 0, 0.095);
+  text-align: center;
+  line-height: 250px;
+  color: rgba(255, 253, 253, 0.898);
+  display: inline-flexbox;
+  margin: auto;
+  font-family: 'Tajawal', sans-serif;
+    font-size: 30px;
+    padding: 0%;
+}
+.hcls:hover{
+  background-color: rgba(7, 7, 7, 0.646) ;
+  color: rgb(255, 255, 255);
+}
+footer{
+    margin-top: 5px;
+            float: left;
+            height: 200px;
+            width: 30%;
+            background-image: linear-gradient(  120deg,rgba(230, 230, 230, 0.625) 25% ,#1A32B8 25% ) !important;
+            text-align: center;
+            text-align: center;
+}
+footer a {
+    line-height: 200px;
+}
+
+footer a img{
+    height: 50px;
+    width: 50px;
+    border-bottom: #000 solid 2px;
+}
+footer a img:hover {
+    background-color: rgb(255, 255, 255);
+}
+.sho{
+    display: none;
+}
+@media only screen and (min-width:769px) and (max-width:1279px) {
+
+#content{
+            margin: 0px;
+            padding: 0px;
+            height: 1132px;
+        }
+        header{
+            margin: 0px;
+            padding: 0px;
+            height: 20%;
+            width: 25% ;
+            background-color: #000;
+            float: left;
+            border-bottom: #000 2px solid;
+        }
+        header:hover{
+            background-color: rgb(255, 255, 255);
+        }
+        .total{
+            display: inline;
+        }
+        .aca{
+            height: 70px;
+            width: 70px;
+            line-height: 100px;
+            margin-top: 10px;
+        }
+        .bac{
+            font-size: 40px;
+        font-family:'Aclonica', sans-serif;
+        position: relative;
+        top: 2%;
+        right: 7%;
+    color: #1A32B8;
+
+    }
+        nav{
+            margin: 0px;
+            padding: 0px;
+            height: 100px;
+            width: 75% ;
+            background-image: linear-gradient(120deg,#1A32B8 79% ,rgba(230, 230, 230, 0.625) 21%) !important;
+            float: right;
+            border-bottom: #000 2px solid;
+        }
+        nav ul {
+            margin: 0px;
+            padding: 0px;
+            height: 100px;
+            list-style-type: none;
+
+        }
+        nav li{
+            float: left;
+        }
+        nav li a{
+display: inline-block;
+text-align: center;
+line-height: 100px;
+list-style-type: none;
+text-decoration: none;
+font-size: 30px;
+padding-left: 20px;
+padding-right: 20px;
+color: rgb(0, 0, 0);
+        }
+        nav li a:hover{
+            background-color: rgb(255, 255, 255);
+            color: #1A32B8;
+        }
+        #aissa{ 
+            position: absolute;
+            z-index: 1;
+            display: none;
+            text-align: left;
+            height: 50px;
+            padding-right: 20px;
+        }
+        #aissa a{
+              color: #000;
+  background-color: rgb(233, 237, 240);
+  font-size: 15px;
+  display: block;
+  line-height: 50px;
+        }
+        #aissa a:hover{
+            background-color: rgb(255, 255, 255);
+        }
+        #aissaoui:hover #aissa{
+            display: block;
+        }
+        aside{
+            margin-top: 5px;
+            float: left;
+            height: 404px;
+            width: 30%;
+            background-image: linear-gradient(  120deg,rgba(230, 230, 230, 0.625) 55% ,#1A32B8 45% ) !important;
+            text-align: center;
+        }
+        
+        aside a{
+            font-family: 'Mada', sans-serif;
+            margin-top: 10px;
+            list-style-type: none;
+            text-decoration: none;
+            font-size: 31px;
+            color: rgb(251, 251, 251);
+            border: rgb(0, 0, 0) 1px solid;
+            border-radius: 20px;
+            padding: 10px;
+            position: relative;
+            bottom: -10px;
+            background-color: rgb(68, 68, 68);
+        }
+        aside a:hover{
+            background-color: rgb(250, 234, 6);
+            color: #000;
+        }
+       
+        main{
+            margin-top: 5px;
+            margin-left: 1px;
+            float: right;
+            height: 75%;
+            width: 67%;
+            background-image: linear-gradient(120deg,#1A32B8 55% ,rgba(230, 230, 230, 0.625) 45%) !important;
+            padding-right: 2%;
+            text-align: center;
+        }
+        main article{
+    height: 250px;
+    width: 45%;
+    margin: 0.5%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    position: relative;
+    text-align: justify;margin-top: 15px;
+}
+        .spik{
+  position: relative;
+  margin: 0px;
+}
+.yas{
+  height: 250px;
+  width: 100%;
+  border-radius: 19px;
+  position: absolute;
+  margin: auto;
+}
+.hcls{
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  border-radius: 19px;
+  margin: 0%;
+  background-color: rgba(0, 0, 0, 0.095);
+  text-align: center;
+  line-height: 250px;
+  color: rgba(255, 253, 253, 0.898);
+  display: inline-flexbox;
+  margin: auto;
+  font-family: 'Tajawal', sans-serif;
+    font-size: 30px;
+    padding: 0%;
+}
+.hcls:hover{
+  background-color: rgba(7, 7, 7, 0.646) ;
+  color: rgb(255, 255, 255);
+}
+footer{
+    margin-top: 5px;
+            float: left;
+            height: 15%;
+            width: 100%;
+            background-image: linear-gradient(  120deg,rgba(230, 230, 230, 0.625) 25% ,#1A32B8 25% ) !important;
+            text-align: center;
+            text-align: center;
+}
+footer a {
+    line-height: 200px;
+}
+
+footer a img{
+    height: 50px;
+    width: 50px;
+    border-bottom: #000 solid 2px;
+}
+footer a img:hover {
+    background-color: rgb(255, 255, 255);
+}
+.sho{
+    display: none;
+}
+}
+@media only screen and (min-width:481px) and (max-width:768px) {
+
+#content{
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            margin: 0px;
+            padding: 0px;
+            height: 75px;
+            width: 25% ;
+            background-color: #000;
+            float: left;
+            border-bottom: #000 1px solid;
+        }
+        header:hover{
+            background-color: rgb(255, 255, 255);
+        }
+        .total{
+            display: inline;
+        }
+        .aca{
+            height: 60px;
+            width: 60px;
+            line-height: 75px;
+            margin-top: 10px;
+        }
+        .bac{
+            font-size: 21px;
+        font-family:'Aclonica', sans-serif;
+        float: right;
+        position: relative;
+        top: 28%;
+        right:05%;
+    color: #1A32B8;
+        
+    }
+        nav{
+            margin: 0px;
+            padding: 0px;
+            height: 75px;
+            width: 75% ;
+            background-image: linear-gradient(120deg,#1A32B8 79% ,rgba(230, 230, 230, 0.625) 21%) !important;
+            float: right;
+            border-bottom: #000 1px solid;
+        }
+        nav ul {
+            margin: 0px;
+            padding: 0px;
+            height: 75px;
+            list-style-type: none;
+
+        }
+        nav li{
+            float: left;
+        }
+        nav li a{
+display: inline-block;
+text-align: center;
+line-height: 75px;
+list-style-type: none;
+text-decoration: none;
+font-size: 20px;
+padding-left: 15px;
+padding-right: 15px;
+color: rgb(0, 0, 0);
+        }
+        nav li a:hover{
+            background-color: rgb(255, 255, 255);
+            color: #1A32B8;
+        }
+        #aissa{ 
+            position: absolute;
+            z-index: 1;
+            display: none;
+            text-align: left;
+            height: 50px;
+            padding-right: 20px;
+        }
+        #aissa a{
+              color: #000;
+  background-color: rgb(233, 237, 240);
+  font-size: 15px;
+  display: block;
+  line-height: 50px;
+        }
+        #aissa a:hover{
+            background-color: rgb(255, 255, 255);
+        }
+        #aissaoui:hover #aissa{
+            display: block;
+        }
+        aside{
+            display: none;
+            margin-top: 2px;
+            float: left;
+            height: 404px;
+            width: 30%;
+            background-image: linear-gradient(  120deg,rgba(230, 230, 230, 0.625) 55% ,#1A32B8 45% ) !important;
+            text-align: center;
+        }
+        aside a{
+            font-family: 'Mada', sans-serif;
+            margin-top: 10px;
+            list-style-type: none;
+            text-decoration: none;
+            font-size: 30px;
+            color: rgb(251, 251, 251);
+            border: rgb(0, 0, 0) 1px solid;
+            border-radius: 20px;
+            padding: 10px;
+            position: relative;
+            bottom: -10px;
+            background-color: rgb(68, 68, 68);
+        }
+        aside a:hover{
+            background-color: rgb(250, 234, 6);
+            color: #000;
+        }
+       
+        main{
+            margin-top: 3px;
+            float: right;
+            height: 700px;
+            width: 100%;
+            background-image: linear-gradient(120deg,#1A32B8 55% ,rgba(230, 230, 230, 0.625) 45%) !important;
+            padding: 3%;
+            text-align: center;
+        }
+        main article{
+    height: 200px;
+    width: 45%;
+    margin: 0.5%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    position: relative;
+    display: block;
+    text-align: justify;margin-top: 30px;
+}
+        .spik{
+  position: relative;
+  margin: 0px;
+}
+.yas{
+  height: 200px;
+  width: 100%;
+  border-radius: 19px;
+  position: absolute;
+  margin: auto;
+}
+.hcls{
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  border-radius: 19px;
+  margin: 0%;
+  background-color: rgba(0, 0, 0, 0.095);
+  text-align: center;
+  line-height: 200px;
+  color: rgba(255, 253, 253, 0.898);
+  display: inline-flexbox;
+  margin: auto;
+  font-family: 'Tajawal', sans-serif;
+    font-size: 30px;
+    padding: 0%;
+}
+.hcls:hover{
+  background-color: rgba(7, 7, 7, 0.646) ;
+  color: rgb(255, 255, 255);
+}
+footer{
+    margin-top: 5px;
+            float: left;
+            height: 200px;
+            width: 100%;
+            background-image: linear-gradient(  120deg,rgba(230, 230, 230, 0.625) 25% ,#1A32B8 25% ) !important;
+            text-align: center;
+            text-align: center;
+}
+footer a {
+    line-height: 200px;
+}
+
+footer a img{
+    height: 50px;
+    width: 50px;
+    border-bottom: #000 solid 2px;
+}
+footer a img:hover {
+    background-color: rgb(255, 255, 255);
+}
+.sho{
+    display: none;
+}
+}
+@media only screen and (min-width:0px) and (max-width:480px) {
+    #content{
+            margin: 0px;
+            padding: 0px;
+            height: 1100px;
+        }
+        nav{
+            margin: 0px;
+            padding: 0px;
+            height: 50px;
+            width: 100% ;
+            background-image: linear-gradient(120deg,#1A32B8 79% ,rgba(230, 230, 230, 0.625) 21%) !important;
+            float: right;
+            border-bottom: #000 1px solid;
+        }
+        nav ul {
+            margin: 0px;
+            padding: 0px;
+            height: 50px;
+            list-style-type: none;
+
+        }
+        nav li{
+            float: left;
+        }
+        nav li a{
+display: inline-block;
+text-align: center;
+line-height: 50px;
+list-style-type: none;
+text-decoration: none;
+font-size: 18px;
+padding-left: 20px;
+padding-right: 20px;
+color: rgb(0, 0, 0);
+        }
+        nav li a:hover{
+            background-color: rgb(255, 255, 255);
+            color: #1A32B8;
+        }
+        header{
+            margin: 0px;
+            padding: 0px;
+            height: 200px;
+            width: 100% ;
+            background-color: #000;
+            float: left;
+            border-bottom: #000 1px solid;
+        }
+        header:hover{
+            background-color: rgb(255, 255, 255);
+        }
+        .total{
+            display: inline;
+        }
+        .aca{
+            height: 150px;
+            width: 100px;
+            line-height: 50px;
+            margin-top: 19px;
+    margin-left: 4px;
+        }
+        .bac{
+            font-size: 75px;
+        font-family:'Aclonica', sans-serif;
+        float: right;
+        position: relative;
+        top: 10%;
+        right: 5%;
+    color: #1A32B8;
+        
+    }
+        #aissa{ 
+            position: absolute;
+            z-index: 1;
+            display: none;
+            text-align: left;
+            height: 50px;
+            padding-right: 20px;
+        }
+        #aissa a{
+              color: #000;
+  background-color: rgb(233, 237, 240);
+  font-size: 15px;
+  display: block;
+  line-height: 50px;
+        }
+        #aissa a:hover{
+            background-color: rgb(255, 255, 255);
+        }
+        #aissaoui:hover #aissa{
+            display: block;
+        }
+        aside{
+            display: none;
+            margin-top: 5px;
+            float: left;
+            height: 100px;
+            width: 100%;
+            background-image: linear-gradient(  120deg,#1A32B8 83%,rgba(230, 230, 230, 0.625) 83% ) !important;
+            text-align: center;
+        } 
+        .none{
+            display: none;
+        }
+        main{
+            margin-top: 2px;
+            height: 900px;
+            width: 100%;
+            background-image: linear-gradient(120deg,#1A32B8 55% ,rgba(230, 230, 230, 0.625) 45%) !important;
+            padding-top: 30px;
+            text-align: center;
+        }
+        main article{
+    height: 120px;
+    width: 80%;
+    margin: 10px 9%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    position: relative;
+}
+
+        .spik{
+  position: relative;
+  margin: 0px;
+}
+.yas{
+  height: 120px;
+  width: 100%;
+  border-radius: 19px;
+  position: absolute;
+  margin: auto;
+}
+.hcls{
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  border-radius: 19px;
+  margin: 0%;
+  background-color: rgba(0, 0, 0, 0.095);
+  text-align: center;
+  line-height: 120px;
+  color: rgba(255, 255, 255, 0.898);
+  margin: auto;
+  font-family: 'Tajawal', sans-serif;
+    font-size: 27px;
+    padding: 0%;
+}
+.hcls:hover{
+  background-color: rgba(7, 7, 7, 0.646) ;
+  color: rgb(255, 255, 255);
+}
+
+footer{
+    margin-top: 5px;
+            float: left;
+            height: 100px;
+            width: 100%;
+            background-color: rgba(230, 230, 230, 0.625) !important;
+            text-align: center;
+}
+footer a {
+    line-height: 100px;
+}
+
+footer a img{
+    height: 20px;
+    width: 20px;
+    border-bottom: #000 solid 2px;
+}
+footer a img:hover {
+    background-color: rgb(255, 255, 255);
+}
+}
+
+
+
+    </style>
+</head>
+<body id="content">
+     <div >
+     
+<nav>
+<div>
+    <ul>
+        <li><a href="">home</a></li>
+        <li id="aissaoui"><a href="">cours</a>
+        <div id="aissa">
+            <a class="moha" href="">علوم تجريبية</a>
+            <a  class="moha" href="">رياضيات</a>
+            <a class="moha" href="">تقني رياضي</a>
+            <a class="moha" href="">تسير واقتصاد</a>
+            <a  class="moha" href="">آداب وفلسفة</a>
+            <a class="moha" href="">لغات أجنبية</a>
+        </div>
+        </li>
+        <li><a href=""> about us</a></li>
+    </ul>
+</div>
+        </nav>
+        <header>
+            <div class="total">
+   <img class="aca" src="img/aca.png" alt="">
+<h1 class="bac">B.A.C</h1></div>
+</header>
+    <aside>
+        <h1 class="sho">قائمة الشُعب</h1>
+        <div class="none">
+        <iframe  width="90%" height="320px" src="https://www.youtube.com/embed/g6tuPUqc3ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="http://shiyarjemo.com/blog/"> افضل دروس البرمجة </a>
+  </div>  </aside>
+
+    <main>
+        <h1 class="sho">قائمة الشُعب</h1>
+        <!--stf-->
+        <article class="stf">
+         <div class="spik" >
+           <img class="yas" src="img/STF.jpg" alt="">
+           <a href="stf.html"><h1 class="hcls"> علوم تجريبية </h1></a> 
+         </div>
+         </article>
+         <!--MTH-->
+         <article class="mth">
+           <div class="spik" >
+             <img class="yas" src="img/MTH.jpg" alt="">
+             <a href=""><h1 class="hcls">رياضيات</h1></a> 
+           </div>
+           </article>
+     <!--MTK-->
+     <article class="mtk">
+       <div class="spik" >
+         <img class="yas" src="img/MTK.jpg" alt="">
+         <a href="sc20.html"><h1 class="hcls">تقني رياضي</h1></a> 
+       </div>
+       </article>
+     <!--GS-->
+     <article class="gs">
+       <div class="spik" >
+         <img class="yas" src="img/GS.jpg" alt="">
+         <a href="sc20.html"><h1 class="hcls">تسير و اقتصاد</h1></a> 
+       </div>
+       </article>
+     <!--LG-->
+     <article class="lg">
+       <div class="spik" >
+         <img class="yas" src="img/LNG.jpg" alt="">
+         <a href="sc20.html"><h1 class="hcls">لغات أجنبية</h1></a> 
+       </div>
+       </article>
+     <!--AOF-->
+     <article class="aof">
+       <div class="spik" >
+         <img class="yas" src="img/aof.jpg" alt="">
+         <a href="sc20.html"><h1 class="hcls">آداب و فلسفة</h1></a> 
+       </div>
+       </article>
+     </main>
+     
+     <footer>
+        <a href=""><img src="img/fab.png" alt=""></a>
+        <a href=""><img src="img/insta.png" alt=""></a>
+        <a href=""><img src="img/mail.png" alt=""></a>
+
+
+     </footer>
+     
+</div>
+</body>
+</html>
